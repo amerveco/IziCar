@@ -2,7 +2,7 @@
 Instituição: Unochapeco \
 Curso: Ciencia da Computação \
 Componente: Desenvolviento Mobile \
-Professor: Cezar Junios de Souza \
+Professor: Cezar Junior de Souza \
 Alunos: João Gabriel e Marcelo Henrique \
 Projeto de A3: IziCar \
 \
