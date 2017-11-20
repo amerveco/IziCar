@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title align="center">Agendamentos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-list no line>
+    <ion-item class="service-list">
+      <ion-label>Serviços</ion-label>
+      <ion-select [(ngModel)]="servicos">
+        <ion-option value="A">Troca de Óleo</ion-option>
+        <ion-option value="B">Revisão</ion-option>
+        <ion-option value="C">Troca Freio</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="data">
+      <ion-label>Data</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="Date"></ion-datetime>
+    </ion-item>
+
+    <ion-item class="veiculo">
+    <ion-label>Veículo</ion-label>
+    <ion-select [(ngModel)]="veiculo">
+      <ion-option value="A">Corolla</ion-option>
+      <ion-option value="B">Focus</ion-option>
+      <ion-option value="C">Gol</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item class="descricao">
+    <ion-textarea placeholder="Descrição"></ion-textarea>
+  </ion-item>
+
+ 
+  <button ion-button round block outline>Agendar</button>
+
+   
+
+  </ion-list>
+</ion-content>

@@ -1,0 +1,48 @@
+page-home {
+    .background{
+        background-image: url('../assets/bg.jpg');
+    }
+
+    .scroll-content {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+        
+        ion-card-header.card-header{
+             color:#0682bb!important;
+             font-size: 20px;
+             font-family: Arial, Helvetica, sans-serif;  
+             margin-bottom: 15px;             
+        }
+
+        a,p{
+            color:#0682bb!important;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;  
+            margin-bottom: 15px;   
+        }
+
+
+        .list > .item-block:first-child{
+            border: 5px;
+            margin-bottom: 15px;
+        }
+
+        .item   {
+            margin-bottom: 40px;
+            background: transparent;
+            border:medium!important;
+            font-family: Arial, Helvetica, sans-serif;
+
+            *::-webkit-input-placeholder{
+                color: #0682bb!important;
+                font-size: 15px;
+            }
+        }
+}

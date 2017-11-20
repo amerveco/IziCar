@@ -1,0 +1,39 @@
+page-agendamentos {
+    .background{
+        background-image: url('../assets/bg.jpg');     
+    }
+
+    .service-list{
+        margin-top: 50px;
+        background-color: transparent;
+        border-color: #0682bb!important;
+        color:#0682bb!important;
+    }
+    .item-cover-default {
+        border-color: #0682bb!important;
+        color:#0682bb!important;
+    }
+    .data{
+        margin-top: 30px;
+        background-color: transparent;
+        border-color: #0682bb!important;        
+        color:#0682bb!important;
+    }
+    .veiculo{
+        margin-top: 30px;
+        background-color: transparent;
+        border-color: #0682bb!important;
+        color:#0682bb!important;
+    }
+
+    .descricao{
+        margin-top:30px;
+        background-color: #777777;
+        border-bottom-color: #0682bb!important;
+        
+    }
+
+    .button{
+        margin-top: 50px;
+    }
+}

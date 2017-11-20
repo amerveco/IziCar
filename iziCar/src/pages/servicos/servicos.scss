@@ -1,0 +1,20 @@
+page-servicos {
+    .background{
+        background-image: url('../assets/bg.jpg');
+    }
+
+    .scroll-content {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .list > .item-block:first-child{
+        border: 5px;
+        margin-bottom: 15px;
+    }
+
+}
