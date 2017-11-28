@@ -6,39 +6,52 @@
   <ion-content class="background">
       <div class="search">
       <ion-searchbar
+        placeholder = "Procure um parceiro..."
         [(ngModel)]="myInput"
         [showCancelButton]="shouldShowCancel"
         (ionInput)="onInput($event)"
         (ionCancel)="onCancel($event)">
-  </ion-searchbar>
+    </ion-searchbar>
 </div>
   <ion-list no line>
       
-        <button ion-item (click)="load()">
-            <ion-thumbnail item-left>
-                <ion-img src="/assets/icone.png"></ion-img>
-            </ion-thumbnail>Teste
+        <button ion-item >
+            <ion-thumbnail item-left (click)="load()">
+                <ion-img src="/assets/icone.png" ></ion-img>
+            </ion-thumbnail>Oficina G5
+            <ion-thumbnail item-right (click)="detail()">
+                <ion-icon name="md-more" id="more"></ion-icon>
+            </ion-thumbnail>
         </button>
     
         <button ion-item >
-            <ion-thumbnail item-left>
-                <ion-img src="/assets/icone.png"></ion-img>
-            </ion-thumbnail> Teste
+                <ion-thumbnail item-left (click)="load()">
+                    <ion-img src="/assets/icone.png" ></ion-img>
+                </ion-thumbnail>Chapadao
+                <ion-thumbnail item-right (click)="detail()">
+                    <ion-icon name="md-more" id="more"></ion-icon>
+                </ion-thumbnail>
         </button>
    
       
-        <button ion-item  >
-            <ion-thumbnail item-left>
-                <ion-img src="/assets/icone.png"></ion-img>
-            </ion-thumbnail>Teste
-        </button>
+        <button ion-item >
+                <ion-thumbnail item-left (click)="load()">
+                    <ion-img src="/assets/icone.png" ></ion-img>
+                </ion-thumbnail>Pai do Marce
+                <ion-thumbnail item-right (click)="detail()">
+                    <ion-icon name="md-more" id="more"></ion-icon>
+                </ion-thumbnail>
+            </button>
       
      
-        <button ion-item  >
-            <ion-thumbnail item-left>
-                <ion-img src="/assets/icone.png"></ion-img>
-            </ion-thumbnail>Teste
-        </button>
+            <button ion-item >
+                    <ion-thumbnail item-left (click)="load()">
+                        <ion-img src="/assets/icone.png" ></ion-img>
+                    </ion-thumbnail>Chapeia Tudo
+                    <ion-thumbnail item-right (click)="detail()">
+                        <ion-icon name="md-more" id="more"></ion-icon>
+                    </ion-thumbnail>
+                </button>
       
   </ion-list>
 

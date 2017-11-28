@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AgendamentosPage } from '../agendamentos/agendamentos';
-/**
- * Generated class for the ParceirosPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { DetalhaParceirosPage } from '../detalha-parceiros/detalha-parceiros';
 
 @IonicPage()
 @Component({
@@ -29,4 +24,11 @@ export class ParceirosPage {
       val: 'trocatela'
     })
   }
+
+  detail() {
+    this.navCtrl.push(DetalhaParceirosPage, {
+      val: 'trocatela'
+    })
+  }
+  
 }

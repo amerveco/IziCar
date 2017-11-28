@@ -1,6 +1,10 @@
 page-home {
     .background{
-        background-image: url('../assets/bg.jpg');
+    background-image: url('../assets/bg.jpg');
+    }
+
+    .card-header {
+        font-size: 50px!important;
     }
 
     .scroll-content {
@@ -45,4 +49,6 @@ page-home {
                 font-size: 15px;
             }
         }
+
+        
 }

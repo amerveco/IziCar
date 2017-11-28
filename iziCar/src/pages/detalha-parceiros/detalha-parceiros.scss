@@ -1,0 +1,37 @@
+page-detalha-parceiros {
+
+    .background{
+        background-image: url('../assets/bg.jpg');   
+        color: #0682bb!important; 
+        font-family: Helvetica, Arial, sans-serif;  
+    }
+
+    #map {
+        height: 50%;
+        
+    }
+
+    #nome {
+        text-align: center;
+    }
+
+    .item-inner{
+        border-bottom-color: #0682bb!important;
+        border: none;
+    }
+
+    .item-block{
+        background-color: transparent;
+        border: none;
+    }
+
+    #serv {
+        color: #0682bb!important;
+    }
+
+    .grid-border {
+        color: red;
+        border: solid 2px;
+    }
+
+}

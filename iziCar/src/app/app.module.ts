@@ -10,6 +10,7 @@ import { ServicosPage } from '../pages/servicos/servicos';
 import { ParceirosPage } from '../pages/parceiros/parceiros';
 import { AgendamentosPage } from '../pages/agendamentos/agendamentos';
 import { CadusuarioPage } from '../pages/cadusuario/cadusuario';
+import { DetalhaParceirosPage } from '../pages/detalha-parceiros/detalha-parceiros';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CadusuarioPage } from '../pages/cadusuario/cadusuario';
     ServicosPage,
     ParceirosPage,
     AgendamentosPage,
-    CadusuarioPage
+    CadusuarioPage,
+    DetalhaParceirosPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { CadusuarioPage } from '../pages/cadusuario/cadusuario';
     ServicosPage,
     ParceirosPage,
     AgendamentosPage,
-    CadusuarioPage
+    CadusuarioPage,
+    DetalhaParceirosPage
   ],
   providers: [
     StatusBar,
