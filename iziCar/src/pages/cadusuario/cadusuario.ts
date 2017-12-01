@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the CadusuarioPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { HomePage } from '../home/home';
+import { AlertController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -15,13 +10,30 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CadusuarioPage{
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
     
         console.log(navParams.get('val'));
       }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CadusuarioPage');
+  }
+
+  confirm(){
+
+      let alert = this.alertCtrl.create({
+        title: 'Bem vindo',
+        subTitle: 'Voce está cadastrado no IziCar, parabens!',
+        buttons: ['OK']
+      });
+      alert.present();
+      this.home();
+  }
+
+  home() {
+    this.navCtrl.push(HomePage, {
+      val: 'trocatela'
+    })
   }
 
 }

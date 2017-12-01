@@ -18,7 +18,7 @@ export class DetalhaParceirosPage {
   }
 
   ionViewDidLoad() {
-    this.showMap();
+    this.showMapWithParam(this.getLat(), this.getLng());
     console.log(this.mapRef);
   }
 
@@ -33,9 +33,33 @@ export class DetalhaParceirosPage {
       streetViewControl: false,
       mapTypeId: 'terrain'
     }
-
     const map = new google.maps.Map(this.mapRef.nativeElement, options);
+    this.addMarker(location, map);
 
+  }
+
+  getLat(){
+    var valor: any = 51.507351;
+    return valor;
+  }
+
+  getLng(){
+    var valor: any = -0.127758;
+    return valor;
+  }
+
+  showMapWithParam(lat: any, lng: any) {
+    //lagitude e longitude
+    const location = new google.maps.LatLng(lat, lng);
+
+    //opções do mapa
+    const options = {
+      center: location,
+      zoom: 16,
+      streetViewControl: false,
+      mapTypeId: 'terrain'
+    }
+    const map = new google.maps.Map(this.mapRef.nativeElement, options);
     this.addMarker(location, map);
 
   }

@@ -1,11 +1,14 @@
 page-home {
+
     .background{
-    background-image: url('../assets/bg.jpg');
+        background-color: #334252!important;
     }
 
     .card-header {
         font-size: 50px!important;
+        
     }
+
 
     .scroll-content {
         align-content: center;
@@ -16,17 +19,17 @@ page-home {
         font-family: Arial, Helvetica, sans-serif;
         
     }
-
         
         ion-card-header.card-header{
-             color:#0682bb!important;
+            color: #3DC7BE!important;
+
              font-size: 20px;
-             font-family: Arial, Helvetica, sans-serif;  
-             margin-bottom: 15px;             
+             font-family: sans-serif, Arial, Helvetica, sans-serif;  
+             margin-bottom: 15px;            
         }
 
         a,p{
-            color:#0682bb!important;
+            color:#3DC7BE!important;
             font-size: 15px;
             font-family: Arial, Helvetica, sans-serif;  
             margin-bottom: 15px;   
@@ -34,21 +37,49 @@ page-home {
 
 
         .list > .item-block:first-child{
-            border: 5px;
+            border: 0px;
             margin-bottom: 15px;
         }
 
         .item   {
             margin-bottom: 40px;
             background: transparent;
-            border:medium!important;
+            border:none!important;
             font-family: Arial, Helvetica, sans-serif;
 
+            color: #3DC7BE!important;
+            font-size: 15px;
+
             *::-webkit-input-placeholder{
-                color: #0682bb!important;
+                color: #3DC7BE!important;
                 font-size: 15px;
             }
         }
 
-        
+        #userpass {
+            position: center;
+            //background-color: #364857!important;
+            background-color: #384f5f!important;
+            
+        }
+
+        #login {
+            border: 1px solid #3DC7BE!important;
+            color: #3DC7BE!important;
+            font-size: 15px;
+        }
+
+        #face {
+            font-size: 15px;
+        }
+
+        #google {
+            font-size: 15px;
+        }
+
+        #bott {
+            font-size: 14px;
+            color: #3DC7BE!important;
+        }
+
 }

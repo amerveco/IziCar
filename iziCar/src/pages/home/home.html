@@ -1,24 +1,29 @@
 <ion-content class="background">    
       <ion-card-header>
-          Izi Car
+          IziCar
       </ion-card-header>
       
-          <ion-list no-line>
+          <ion-list no-lines>
               <ion-item>
-                  <ion-input type="text" placeholder="Usuário"></ion-input>
+                  <ion-input col-md-4 id="userpass" type="text" placeholder="Usuário"></ion-input>
               </ion-item>
               <ion-item>
-                  <ion-input type="password" placeholder="Senha"></ion-input>
+                  <ion-input col-md-4 id="userpass" type="password" placeholder="Senha"></ion-input>
               </ion-item>
               
-              <button ion-button round block outline (click)="load()">Entrar</button>
-             <p>ou</p>
-              <button ion-button round block color="facebook">
+              <button id="login" ion-button col-md-4 block outline (click)="load()">Entrar</button>
+             <p>————— ou ————— </p>
+              <button id="face" colmd-4 ion-button block color="facebook">
                 <ion-icon padding name="logo-facebook"> </ion-icon> Entrar com o Facebook
               </button>
-              <p> Esqueceu sua senha? Recuperar Senha</p>
+              <button id="google" colmd-4 ion-button block color="googleplus">
+                <ion-icon padding name="logo-googleplus"> </ion-icon> Entrar com o Google
+              </button>
+              <button ion-button id="bott" clear>Esqueceu sua senha? <u padding> Recupere aqui!</u></button>
+             
           </ion-list>
+         
       
   
-  <button ion-button clear full color="" (click)="loadCadastro()">Não possuí um conta? Crie uma!</button>
+  <button ion-button id="bott" clear (click)="loadCadastro()">Não possuí uma conta? <u padding> Crie uma!</u></button>
 </ion-content>

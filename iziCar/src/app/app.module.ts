@@ -12,6 +12,21 @@ import { AgendamentosPage } from '../pages/agendamentos/agendamentos';
 import { CadusuarioPage } from '../pages/cadusuario/cadusuario';
 import { DetalhaParceirosPage } from '../pages/detalha-parceiros/detalha-parceiros';
 
+import { Facebook } from '@ionic-native/facebook';
+import { AuthProvider } from '../providers/auth/auth';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+const  firebaseConfig = {
+  apiKey: "AIzaSyBkxFyPNdbVBEH0ifV-gFrG05V_88F77oQ",
+  authDomain: "izicar-1511866994850.firebaseapp.com",
+  databaseURL: "https://izicar-1511866994850.firebaseio.com",
+  projectId: "izicar-1511866994850",
+  storageBucket: "izicar-1511866994850.appspot.com",
+  messagingSenderId: "821534118972"
+};
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -24,7 +39,9 @@ import { DetalhaParceirosPage } from '../pages/detalha-parceiros/detalha-parceir
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -39,7 +56,9 @@ import { DetalhaParceirosPage } from '../pages/detalha-parceiros/detalha-parceir
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Facebook,
+    AuthProvider
   ]
 })
 export class AppModule {}

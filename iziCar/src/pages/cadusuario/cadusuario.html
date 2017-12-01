@@ -1,16 +1,17 @@
 <ion-header>
   <ion-navbar>
-    <ion-title align="center">Cadastro</ion-title>
+    <ion-title align="center">Cadastre-se</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="background">
-  <ion-list>
+  <ion-list no-lines>
+    <ion-label id="veiculo" ><h5>Seus dados</h5></ion-label>
       <ion-item>
-          <ion-input type="text" placeholder="e-mail"></ion-input>
+          <ion-input type="text" placeholder="Nome"></ion-input>
       </ion-item>
       <ion-item>
-          <ion-input type="text" placeholder="Usuário"></ion-input>
+          <ion-input type="text" placeholder="E-mail"></ion-input>
       </ion-item>
       <ion-item>
           <ion-input type="password" placeholder="Senha"></ion-input>
@@ -18,15 +19,27 @@
       <ion-item>
           <ion-input type="password" placeholder="Repita a senha"></ion-input>
       </ion-item>
-      
       <ion-item>
           <ion-input type="text" placeholder="CPF"></ion-input>
       </ion-item>
       <ion-item>
-          <ion-input type="text" placeholder="Automóvel"></ion-input>
+            <ion-input type="text" placeholder="Telefone"></ion-input>
+        </ion-item>
+            <ion-item>
+                    <ion-input type="text" placeholder="Data de nascimento"></ion-input>
+                </ion-item>
+      <ion-label id="veiculo" ><h5>Dados do veículo</h5></ion-label>
+      <ion-item>
+          <ion-input type="text" placeholder="Modelo"></ion-input>
       </ion-item>
-      <button ion-button round block outline>Cadastrar</button>
-      
+      <ion-item>
+            <ion-input type="text" placeholder="Ano"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" placeholder="Placa"></ion-input>
+      </ion-item>
+            
   </ion-list>
+  <button id="submit" ion-button block outline (click)="confirm()">Concluir</button>
 
 </ion-content>
