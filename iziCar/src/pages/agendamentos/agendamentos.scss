@@ -1,39 +1,71 @@
 page-agendamentos {
     .background{
-        background-image: url('../assets/bg.jpg');     
+        background-color: #334252!important;     
+    }
+
+    .list > .item-block:first-child{
+        border: 5px;    
     }
 
     .service-list{
         margin-top: 50px;
         background-color: transparent;
-        border-color: #0682bb!important;
-        color:#0682bb!important;
+        border:none!important;
+        color:#3DC7BE!important;
+
+        
+        
     }
-    .item-cover-default {
-        border-color: #0682bb!important;
-        color:#0682bb!important;
-    }
+
     .data{
         margin-top: 30px;
         background-color: transparent;
-        border-color: #0682bb!important;        
-        color:#0682bb!important;
+        border-color: #3DC7BE!important;        
+        color:#3DC7BE!important;
     }
     .veiculo{
         margin-top: 30px;
         background-color: transparent;
-        border-color: #0682bb!important;
-        color:#0682bb!important;
+        border-color: #3DC7BE!important;
+        color:#3DC7BE!important;
     }
 
     .descricao{
         margin-top:30px;
-        background-color: #777777;
-        border-bottom-color: #0682bb!important;
+        background-color: #495e74;
+
+        
+        *::-webkit-input-placeholder{
+            color: #3DC7BE!important;
+            font-size: 15px;
+        }
         
     }
 
     .button{
         margin-top: 50px;
     }
+
+    .agendar{
+        border-color: #3DC7BE!important;        
+        color:#3DC7BE!important;
+    }
+
+    .item   {
+        margin-bottom: 5px;
+        //background: transparent;
+        border:none!important;
+        font-family: Arial, Helvetica, sans-serif;
+
+        color: #3DC7BE!important;
+        font-size: 15px;
+
+        *::-webkit-input-placeholder{
+            color: #3DC7BE!important;
+            font-size: 15px;
+        }
+        background-color: #384f5f!important;
+    }
+
+
 }

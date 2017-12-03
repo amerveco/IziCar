@@ -1,12 +1,10 @@
 page-home {
-
+    #logo{
+        background: transparent!important;
+    }
+    
     .background{
         background-color: #334252!important;
-    }
-
-    .card-header {
-        font-size: 50px!important;
-        
     }
 
 
@@ -17,7 +15,6 @@ page-home {
         justify-content: center;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
-        
     }
         
         ion-card-header.card-header{
@@ -38,7 +35,7 @@ page-home {
 
         .list > .item-block:first-child{
             border: 0px;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
         }
 
         .item   {
@@ -61,6 +58,7 @@ page-home {
             //background-color: #364857!important;
             background-color: #384f5f!important;
             
+            
         }
 
         #login {
@@ -81,5 +79,7 @@ page-home {
             font-size: 14px;
             color: #3DC7BE!important;
         }
+
+     
 
 }
