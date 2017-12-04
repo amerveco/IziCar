@@ -1,5 +1,6 @@
 page-servicos {
     .background{
+<<<<<<< HEAD
         background-image: url('../assets/imgs/wallpaper');
         background-size: 100px;
         background-position-y: 80px;
@@ -7,6 +8,9 @@ page-servicos {
         background-repeat: no-repeat;     
         background-color: #334252!important;
         color:  #3DC7BE!important;
+=======
+        background-color: #334252!important;
+>>>>>>> 0047c9537fd0f7a90df9c49c5bc7542c9a5b7e54
     }
 
     .scroll-content {
@@ -18,9 +22,44 @@ page-servicos {
         font-family: Arial, Helvetica, sans-serif;
     }
 
+<<<<<<< HEAD
     #btn {
         font-size: 16px;
         color: #3DC7BE!important;
+=======
+    .list > .item-block:first-child{
+        border: 5px;
+        margin-bottom: 15px;
+        
+    }
+
+    #chapeacao{
+        color:#3DC7BE!important;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;  
+        margin-bottom: 15px; 
+        border: 1px solid #3DC7BE!important;
+    }
+    #mecanica{
+        color:#3DC7BE!important;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;  
+        margin-bottom: 15px; 
+        border: 1px solid #3DC7BE!important;
+    }
+    #eletrica{
+        color:#3DC7BE!important;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;  
+        margin-bottom: 15px; 
+        border: 1px solid #3DC7BE!important;
+    }
+    #borracharia{
+        color:#3DC7BE!important;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;  
+        margin-bottom: 15px; 
+>>>>>>> 0047c9537fd0f7a90df9c49c5bc7542c9a5b7e54
         border: 1px solid #3DC7BE!important;
     }
 
