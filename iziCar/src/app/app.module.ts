@@ -16,6 +16,7 @@ import { Facebook } from '@ionic-native/facebook';
 import { AuthProvider } from '../providers/auth/auth';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { Component } from '@angular/core';
 
 const  firebaseConfig = {
   apiKey: "AIzaSyBkxFyPNdbVBEH0ifV-gFrG05V_88F77oQ",

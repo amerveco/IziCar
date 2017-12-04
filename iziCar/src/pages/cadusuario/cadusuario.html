@@ -1,45 +1,51 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title align="center">Cadastre-se</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title align="center">Cadastre-se</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content class="background">
-  <ion-list no-lines>
-    <ion-label id="veiculo" ><h5>Seus dados</h5></ion-label>
-      <ion-item>
-          <ion-input type="text" placeholder="Nome"></ion-input>
-      </ion-item>
-      <ion-item>
-          <ion-input type="text" placeholder="E-mail"></ion-input>
-      </ion-item>
-      <ion-item>
-          <ion-input type="password" placeholder="Senha"></ion-input>
-      </ion-item>
-      <ion-item>
-          <ion-input type="password" placeholder="Repita a senha"></ion-input>
-      </ion-item>
-      <ion-item>
-          <ion-input type="text" placeholder="CPF"></ion-input>
-      </ion-item>
-      <ion-item>
-            <ion-input type="text" placeholder="Telefone"></ion-input>
-        </ion-item>
+    <form #form="ngForm" novalidate>
+        <ion-list no-lines>
+            <ion-label id="veiculo" ><h5>Seus dados</h5></ion-label>
             <ion-item>
-                    <ion-input type="text" placeholder="Data de nascimento"></ion-input>
-                </ion-item>
-      <ion-label id="veiculo" ><h5>Dados do veículo</h5></ion-label>
-      <ion-item>
-          <ion-input type="text" placeholder="Modelo"></ion-input>
-      </ion-item>
-      <ion-item>
-            <ion-input type="text" placeholder="Ano"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-input type="text" placeholder="Placa"></ion-input>
-      </ion-item>
+                <ion-input [(ngModel)]="usuario.nome" #nome="ngModel" type="text" placeholder="Nome" name="nome"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input [(ngModel)]="usuario.email" #email="ngModel" type="text" placeholder="E-mail" name="email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="password" placeholder="Senha"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input [(ngModel)]="usuario.senha" #senha="ngModel" type="password" placeholder="Repita a senha" name="senha"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input [(ngModel)]="usuario.cpf" #cpf="ngModel" type="text" placeholder="CPF" name="cpf"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input [(ngModel)]="usuario.telefone" #telefone="ngModel" type="text" placeholder="Telefone" name="telefone"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input [(ngModel)]="usuario.dataNasc" #dataNasc="ngModel" type="text" placeholder="Data de nascimento" name="dataNasc"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input [(ngModel)]="usuario.foto" #foto="ngModel" type="text" placeholder="Foto de perfil" name="foto"></ion-input>
+            </ion-item>
             
-  </ion-list>
-  <button id="submit" ion-button block outline (click)="confirm()">Concluir</button>
-
+            <ion-label id="veiculo" ><h5>Dados do veículo</h5></ion-label>
+            <ion-item>
+                <ion-input type="text" placeholder="Modelo"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" placeholder="Ano"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" placeholder="Placa"></ion-input>
+            </ion-item>
+        </ion-list>
+        <!--{{usuario | json}}--> 
+        <button id="submit"  ion-button block outline (click)="criarConta()">Concluir</button>
+    </form>
+    
 </ion-content>

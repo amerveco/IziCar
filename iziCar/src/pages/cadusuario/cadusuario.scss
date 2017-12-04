@@ -6,10 +6,22 @@ page-cadusuario {
 
     .list > .item-block:first-child{
         border: 5px;
-        
     }
 
-    .item   {
+    .toolbar-background {
+        background-color: #384f5f!important;
+        color: #3DC7BE!important;
+      }
+
+    .toolbar-title {
+        color: rgb(229, 226, 226)!important;
+    }
+
+    .bar-button {
+        color: #3DC7BE!important;
+    }
+
+    .item {
         margin-bottom: 5px;
         //background: transparent;
         border:none!important;

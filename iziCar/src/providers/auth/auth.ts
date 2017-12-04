@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { User } from './user';
+import { Usuario } from '../../model/Usuario/Usuario';
 import { Observable } from 'rxjs/Observable';
 import * as firebase from 'firebase/app';
 
@@ -15,8 +15,12 @@ export class AuthProvider {
     this.user = angularFireAuth.authState;
   }
 
-  createUser(user: User) {
-    return this.angularFireAuth.auth.createUserWithEmailAndPassword(user.email, user.password);
+  createUser(user: Usuario) {
+    return this.angularFireAuth.auth.createUserWithEmailAndPassword(user.email, user.senha);
+  }
+
+  singIn(user: Usuario){
+    return this.angularFireAuth.auth.signInWithEmailAndPassword(user.email, user.senha);
   }
 
   singInWithFacebook() {

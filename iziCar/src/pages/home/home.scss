@@ -56,7 +56,7 @@ page-home {
             }
         }
 
-        #userpass {
+        #user, #pass {
             position: center;
             //background-color: #364857!important;
             background-color: #384f5f!important;
@@ -80,6 +80,11 @@ page-home {
         #bott {
             font-size: 14px;
             color: #3DC7BE!important;
+        }
+
+        #logo {
+            background-color: transparent!important;
+            
         }
 
 }

@@ -1,6 +1,12 @@
 page-servicos {
     .background{
-        background-image: url('../assets/bg.jpg');
+        background-image: url('../assets/imgs/wallpaper');
+        background-size: 100px;
+        background-position-y: 80px;
+        background-position-x: center;
+        background-repeat: no-repeat;     
+        background-color: #334252!important;
+        color:  #3DC7BE!important;
     }
 
     .scroll-content {
@@ -12,9 +18,24 @@ page-servicos {
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    .list > .item-block:first-child{
-        border: 5px;
-        margin-bottom: 15px;
+    #btn {
+        font-size: 16px;
+        color: #3DC7BE!important;
+        border: 1px solid #3DC7BE!important;
     }
+
+    .toolbar-background {
+        background-color: #384f5f!important;
+        color: #3DC7BE!important;
+      }
+
+    .toolbar-title {
+        color: rgb(229, 226, 226)!important;
+    }
+
+    .bar-button {
+        color: #3DC7BE!important;
+    }
+    
 
 }

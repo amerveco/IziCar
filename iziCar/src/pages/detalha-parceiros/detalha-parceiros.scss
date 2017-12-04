@@ -1,8 +1,8 @@
 page-detalha-parceiros {
 
     .background{
-        //background-image: url('../assets/bg.jpg');   
-        color: #0682bb!important; 
+        background-color: #334252!important;
+        color: #3DC7BE!important;
         font-family: Helvetica, Arial, sans-serif;  
     }
 
@@ -29,9 +29,19 @@ page-detalha-parceiros {
         color: #0682bb!important;
     }
 
-    .grid-border {
-        color: red;
-        border: solid 2px;
+    
+
+    .toolbar-background {
+        background-color: #384f5f!important;
+        color: #3DC7BE!important;
+      }
+
+    .toolbar-title {
+        color: rgb(229, 226, 226)!important;
+    }
+
+    .bar-button {
+        color: #3DC7BE!important;
     }
 
 }

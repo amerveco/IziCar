@@ -3,56 +3,66 @@
     <ion-title align="center">Parceiros</ion-title>
   </ion-navbar>
 </ion-header>
-  <ion-content class="background">
-      <div class="search">
-      <ion-searchbar
-        placeholder = "Procure um parceiro..."
-        [(ngModel)]="myInput"
-        [showCancelButton]="shouldShowCancel"
-        (ionInput)="onInput($event)"
-        (ionCancel)="onCancel($event)">
-    </ion-searchbar>
-</div>
-  <ion-list no-lines>
-      
-        <button ion-item >
-            <ion-thumbnail item-left (click)="load()">
-                <ion-img src="/assets/icone.png" ></ion-img>
-            </ion-thumbnail>Oficina G5
+<ion-content class="background">
+    <div class="search">
+        <ion-searchbar placeholder = "Procure um parceiro...">
+            <!--
+            [(ngModel)]="myInput"
+            [showCancelButton]="shouldShowCancel"
+            (ionInput)="onInput($event)"
+            (ionCancel)="onCancel($event)"
+            -->
+        </ion-searchbar>
+    </div>
+    
+    <ion-list no-lines>
+
+        <ion-item >
+            <button id="btn" ion-item (click)="load()">
+                <ion-thumbnail item-left >
+                    <ion-img src="/assets/icone.png" ></ion-img>
+                </ion-thumbnail>Oficina G5 
+            </button>
+            <ion-thumbnail item-right (click)="detail()">
+                    <ion-icon name="md-more" id="more"></ion-icon>
+                </ion-thumbnail>
+        </ion-item>
+        
+    
+        <ion-item >
+            <button id="btn" ion-item (click)="load()">
+                <ion-thumbnail item-left >
+                    <ion-img src="/assets/icone.png" ></ion-img>
+                </ion-thumbnail>Alguma Coisa 
+            </button>
             <ion-thumbnail item-right (click)="detail()">
                 <ion-icon name="md-more" id="more"></ion-icon>
             </ion-thumbnail>
-        </button>
-    
-        <button ion-item >
-                <ion-thumbnail item-left (click)="load()">
-                    <ion-img src="/assets/icone.png" ></ion-img>
-                </ion-thumbnail>Chapadao
-                <ion-thumbnail item-right (click)="detail()">
-                    <ion-icon name="md-more" id="more"></ion-icon>
-                </ion-thumbnail>
-        </button>
+        </ion-item>
    
       
-        <button ion-item >
-                <ion-thumbnail item-left (click)="load()">
+        <ion-item (click)="load()">
+            <button id="btn" ion-item >
+                <ion-thumbnail item-left >
                     <ion-img src="/assets/icone.png" ></ion-img>
-                </ion-thumbnail>Pai do Marce
+                </ion-thumbnail>Outra Coisa
+                </button>
                 <ion-thumbnail item-right (click)="detail()">
                     <ion-icon name="md-more" id="more"></ion-icon>
                 </ion-thumbnail>
-            </button>
-      
-     
-            <button ion-item >
-                    <ion-thumbnail item-left (click)="load()">
-                        <ion-img src="/assets/icone.png" ></ion-img>
-                    </ion-thumbnail>Chapeia Tudo
-                    <ion-thumbnail item-right (click)="detail()">
-                        <ion-icon name="md-more" id="more"></ion-icon>
-                    </ion-thumbnail>
+        </ion-item>
+
+        <ion-item >
+            <button id="btn" ion-item (click)="load()">
+                <ion-thumbnail item-left >
+                    <ion-img src="/assets/icone.png" ></ion-img>
+                </ion-thumbnail>Coisa 03
                 </button>
-      
+                <ion-thumbnail item-right (click)="detail()">
+                    <ion-icon name="md-more" id="more"></ion-icon>
+                </ion-thumbnail>
+        </ion-item>
+
   </ion-list>
 
 
